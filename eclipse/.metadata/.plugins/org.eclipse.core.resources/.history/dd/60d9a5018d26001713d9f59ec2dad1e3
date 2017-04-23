@@ -1,0 +1,29 @@
+# Configuration file
+
+"set ore generation" {
+    # gui.config.gen.platinum.comment
+    B:Generate_Platinum_Ore=true
+
+    # gui.config.gen.tin.comment
+    B:Generate_Tin_Ore=true
+
+    # gui.config.gen.silver.comment
+    B:Generate_Silver_Ore=true
+
+    # gui.config.gen.aluminum.comment
+    B:Generate_Aluminum_Ore=true
+
+    # gui.config.gen.copper.comment
+    B:Generate_Copper_Ore=true
+
+    # gui.config.gen.nickel.comment
+    B:Generate_Nickel_Ore=true
+
+    # gui.config.gen.sulfur.comment
+    B:Generate_Sulfur_Ore=true
+
+    # gui.config.gen.saltpeter.comment
+    B:Generate_Saltpeter_Ore=true
+}
+
+

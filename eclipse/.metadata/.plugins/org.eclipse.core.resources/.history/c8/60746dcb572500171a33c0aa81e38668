@@ -1,0 +1,6 @@
+{
+    "parent": "builtin/generated",
+    "textures": {
+        "layer0": "icf:items/food_slice_of_raw_bacon"
+    }
+}

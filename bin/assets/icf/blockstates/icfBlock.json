@@ -1,0 +1,92 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": { },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "type": {
+      "black": {
+        "textures": {
+          "all": "icf:blocks/foamblack"
+        }
+      },
+      "red": {
+        "textures": {
+          "all": "icf:blocks/foamred"
+        }
+      },
+      "green": {
+        "textures": {
+          "all": "icf:blocks/foamgreen"
+        }
+      },
+      "brown": {
+        "textures": {
+          "all": "icf:blocks/foambrown"
+        }
+      },
+      "blue": {
+        "textures": {
+          "all": "icf:blocks/foamblue"
+        }
+      },
+      "purple": {
+        "textures": {
+          "all": "icf:blocks/foampurple"
+        }
+      },
+      "cyan": {
+        "textures": {
+          "all": "icf:blocks/foamcyan"
+        }
+      },
+      "lgray": {
+        "textures": {
+          "all": "icf:blocks/foamlgray"
+        }
+      },
+      "gray": {
+        "textures": {
+          "all": "icf:blocks/foamgray"
+        }
+      },
+      "pink": {
+        "textures": {
+          "all": "icf:blocks/foampink"
+        }
+      },
+      "lime": {
+        "textures": {
+          "all": "icf:blocks/foamlime"
+        }
+      },
+      "yellow": {
+        "textures": {
+          "all": "icf:blocks/foamyellow"
+        }
+      },
+      "lblue": {
+        "textures": {
+          "all": "icf:blocks/foamlblue"
+        }
+      },
+      "magenta": {
+        "textures": {
+          "all": "icf:blocks/foammagenta"
+        }
+      },
+      "orange": {
+        "textures": {
+          "all": "icf:blocks/foamorange"
+        }
+      },
+      "white": {
+        "textures": {
+          "all": "icf:blocks/foamwhite"
+        }
+      }
+    }
+  }
+}

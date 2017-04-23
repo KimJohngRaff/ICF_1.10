@@ -1,0 +1,212 @@
+package com.KJR.ICF.registry;
+
+import com.KJR.ICF.ICF_Global;
+import com.KJR.ICF.MaterialsICF;
+import com.KJR.ICF.items.Item_ICF_Durable;
+import com.KJR.ICF.items.Item_ICF_Dust_Metal;
+import com.KJR.ICF.items.Item_ICF_Dust_Other;
+import com.KJR.ICF.items.Item_ICF_Food;
+import com.KJR.ICF.items.Item_ICF_Ingot;
+import com.KJR.ICF.items.Item_ICF_Misc_1;
+import com.KJR.ICF.items.Item_ICF_SwineHammer;
+import com.KJR.ICF.items.armor.Item_ICF_AluminumArmor;
+import com.KJR.ICF.items.armor.Item_ICF_EndimandiumArmor;
+import com.KJR.ICF.items.tools.Item_ICF_AluminumAxe;
+import com.KJR.ICF.items.tools.Item_ICF_AluminumHoe;
+import com.KJR.ICF.items.tools.Item_ICF_AluminumPickaxe;
+import com.KJR.ICF.items.tools.Item_ICF_AluminumShovel;
+import com.KJR.ICF.items.tools.Item_ICF_AluminumSword;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelBakery;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class ICF_Items {
+
+	//declare items
+	public static Item icfIngot;
+	public static Item icfDust_Metal;
+	public static Item icfDust_Other;
+	public static Item icfMisc_1;
+	
+	//tools
+	public static Item toolEndimandiumSwineHammer;
+	public static Item toolAluminumSwineHammer;
+	public static Item toolBronzeSwineHammer;
+	public static Item toolAluminumPickaxe;
+	public static Item toolAluminumAxe;
+	public static Item toolAluminumShovel;
+	public static Item toolAluminumHoe;
+	public static Item toolAluminumSword;
+	
+	//durable
+	public static Item silver_knife;
+	
+	//food
+	public static Item cheese_wheel;
+	public static Item cheese_sandwich;
+	public static Item pork_back;
+	public static Item slice_of_cheese;
+	public static Item slice_of_bread;
+	public static Item slice_of_raw_bacon;
+	public static Item slice_of_cooked_bacon;
+	public static Item fried_egg;
+	public static Item bacon_egg_cheese;
+	
+	//armor
+	public static Item endimandiumHelmet;
+	public static Item endimandiumChestplate;
+	public static Item endimandiumLeggings;
+	public static Item endimandiumBoots;
+	public static Item aluminumHelmet;
+	public static Item aluminumChestplate;
+	public static Item aluminumLeggings;
+	public static Item aluminumBoots;
+	
+	//initialize items
+	public static void initItems() {
+		//items
+		GameRegistry.register(icfIngot = new Item_ICF_Ingot());
+		GameRegistry.register(icfDust_Metal = new Item_ICF_Dust_Metal());
+		GameRegistry.register(icfDust_Other = new Item_ICF_Dust_Other());
+		GameRegistry.register(icfMisc_1 = new Item_ICF_Misc_1());
+		//tools
+		GameRegistry.register(toolEndimandiumSwineHammer = new Item_ICF_SwineHammer(MaterialsICF.EndimandiumSwineMaterial).setUnlocalizedName("SwineHammerEndimandium").setRegistryName("SwineHammerEndimandium"));
+		GameRegistry.register(toolAluminumSwineHammer = new Item_ICF_SwineHammer(MaterialsICF.AluminumSwineMaterial).setUnlocalizedName("SwineHammerAluminum").setRegistryName("SwineHammerAluminum"));
+		GameRegistry.register(toolBronzeSwineHammer = new Item_ICF_SwineHammer(MaterialsICF.BronzeSwineMaterial).setUnlocalizedName("SwineHammerBronze").setRegistryName("SwineHammerBronze"));
+		GameRegistry.register(toolAluminumPickaxe = new Item_ICF_AluminumPickaxe(MaterialsICF.AluminumToolMaterial).setUnlocalizedName("PickaxeAluminium").setRegistryName("PickaxeAluminum"));
+		GameRegistry.register(toolAluminumAxe = new Item_ICF_AluminumAxe(MaterialsICF.AluminumToolMaterial, 1.0f, 1.0f).setUnlocalizedName("AxeAluminium").setRegistryName("AxeAluminum"));
+		GameRegistry.register(toolAluminumShovel = new Item_ICF_AluminumShovel(MaterialsICF.AluminumToolMaterial).setUnlocalizedName("ShovelAluminium").setRegistryName("ShovelAluminum"));
+		GameRegistry.register(toolAluminumHoe = new Item_ICF_AluminumHoe(MaterialsICF.AluminumToolMaterial).setUnlocalizedName("HoeAluminium").setRegistryName("HoeAluminum"));
+		GameRegistry.register(toolAluminumSword = new Item_ICF_AluminumSword(MaterialsICF.AluminumToolMaterial).setUnlocalizedName("SwordAluminium").setRegistryName("SwordAluminum"));
+		//durable
+		GameRegistry.register(silver_knife = new Item_ICF_Durable("silver_knife", 32,"silver_knife"));
+		//food
+		GameRegistry.register(cheese_wheel = new Item_ICF_Food("cheese_wheel", 2, 0.6F, false, "cheese_wheel"));
+		GameRegistry.register(cheese_sandwich = new Item_ICF_Food("cheese_sandwich", 5, 1.2F, false, "cheese_sandwich"));
+		GameRegistry.register(pork_back = new Item_ICF_Food("pork_back", 2, 0.6F, false, "pork_back"));
+		GameRegistry.register(slice_of_cheese = new Item_ICF_Food("slice_of_cheese", 1, 0.4F, false, "slice_of_cheese"));
+		GameRegistry.register(slice_of_bread = new Item_ICF_Food("slice_of_bread", 1, 0.3F, false, "slice_of_bread"));
+		GameRegistry.register(slice_of_raw_bacon = new Item_ICF_Food("slice_of_raw_bacon", 1, 0.6F, false, "slice_of_raw_bacon"));
+		GameRegistry.register(slice_of_cooked_bacon = new Item_ICF_Food("slice_of_cooked_bacon", 2, 0.8F, false, "slice_of_cooked_bacon"));
+		GameRegistry.register(fried_egg = new Item_ICF_Food("fried_egg", 3, 0.6F, false, "fried_egg"));
+		GameRegistry.register(bacon_egg_cheese = new Item_ICF_Food("bacon_egg_cheese", 7, 1.8F, false, "bacon_egg_cheese"));
+		//armor
+		GameRegistry.registerItem(endimandiumHelmet = new Item_ICF_EndimandiumArmor("endimandiumHelmet", MaterialsICF.ENDIMANDIUMARMOR, 1, EntityEquipmentSlot.HEAD, "endimandiumHelmet"));
+		GameRegistry.registerItem(endimandiumChestplate = new Item_ICF_EndimandiumArmor("endimandiumChestplate", MaterialsICF.ENDIMANDIUMARMOR, 1, EntityEquipmentSlot.CHEST, "endimandiumChestplate"));
+		GameRegistry.registerItem(endimandiumLeggings = new Item_ICF_EndimandiumArmor("endimandiumLeggings", MaterialsICF.ENDIMANDIUMARMOR, 2, EntityEquipmentSlot.LEGS, "endimandiumLeggings"));
+		GameRegistry.registerItem(endimandiumBoots = new Item_ICF_EndimandiumArmor("endimandiumBoots", MaterialsICF.ENDIMANDIUMARMOR, 1, EntityEquipmentSlot.FEET, "endimandiumBoots"));
+		GameRegistry.registerItem(aluminumHelmet = new Item_ICF_AluminumArmor("aluminumHelmet", MaterialsICF.ALUMINUMARMOR, 1, EntityEquipmentSlot.HEAD, "aluminumHelmet"));
+		GameRegistry.registerItem(aluminumChestplate = new Item_ICF_AluminumArmor("aluminumChestplate", MaterialsICF.ALUMINUMARMOR, 1, EntityEquipmentSlot.CHEST, "aluminumChestplate"));
+		GameRegistry.registerItem(aluminumLeggings = new Item_ICF_AluminumArmor("aluminumLeggings", MaterialsICF.ALUMINUMARMOR, 2, EntityEquipmentSlot.LEGS, "aluminumLeggings"));
+		GameRegistry.registerItem(aluminumBoots = new Item_ICF_AluminumArmor("aluminumBoots", MaterialsICF.ALUMINUMARMOR, 1, EntityEquipmentSlot.FEET, "aluminumBoots"));
+		
+	}
+	
+	//register item variants
+	public static void registerItemVariants() {
+		//items
+		for (int i = 0; i < Item_ICF_Ingot.names.length; i++) {
+			ModelBakery.registerItemVariants(icfIngot, new ModelResourceLocation(ICF_Global.modID + ":ingot" + Item_ICF_Ingot.names[i], "inventory"));
+		}
+		for (int i = 0; i < Item_ICF_Dust_Metal.names.length; i++) {
+			ModelBakery.registerItemVariants(icfDust_Metal, new ModelResourceLocation(ICF_Global.modID + ":dust" + Item_ICF_Dust_Metal.names[i], "inventory"));
+		}
+		for (int i = 0; i < Item_ICF_Dust_Other.names.length; i++) {
+			ModelBakery.registerItemVariants(icfDust_Other, new ModelResourceLocation(ICF_Global.modID + ":dust" + Item_ICF_Dust_Other.names[i], "inventory"));
+		}
+		for (int i = 0; i < Item_ICF_Misc_1.names.length; i++) {
+			ModelBakery.registerItemVariants(icfMisc_1, new ModelResourceLocation(ICF_Global.modID + ":item" + Item_ICF_Misc_1.names[i], "inventory"));
+		}
+		//tools
+		ModelBakery.registerItemVariants(toolEndimandiumSwineHammer, new ModelResourceLocation(ICF_Global.modID + ":SwineHammerEndimandium", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumSwineHammer, new ModelResourceLocation(ICF_Global.modID + ":SwineHammerAluminum", "inventory"));
+		ModelBakery.registerItemVariants(toolBronzeSwineHammer, new ModelResourceLocation(ICF_Global.modID + ":SwineHammerBronze", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumPickaxe, new ModelResourceLocation(ICF_Global.modID + ":PickaxeAluminum", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumAxe, new ModelResourceLocation(ICF_Global.modID + ":AxeAluminum", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumShovel, new ModelResourceLocation(ICF_Global.modID + ":ShovelAluminum", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumHoe, new ModelResourceLocation(ICF_Global.modID + ":HoeAluminum", "inventory"));
+		ModelBakery.registerItemVariants(toolAluminumSword, new ModelResourceLocation(ICF_Global.modID + ":SwordAluminum", "inventory"));
+		//durable
+		ModelBakery.registerItemVariants(silver_knife, new ModelResourceLocation(ICF_Global.modID + ":durable_silver_knife", "inventory"));
+		//food
+		ModelBakery.registerItemVariants(cheese_wheel, new ModelResourceLocation(ICF_Global.modID + ":food_cheese_wheel", "inventory"));
+		ModelBakery.registerItemVariants(cheese_sandwich, new ModelResourceLocation(ICF_Global.modID + ":food_cheese_sandwich", "inventory"));
+		ModelBakery.registerItemVariants(pork_back, new ModelResourceLocation(ICF_Global.modID + ":food_pork_back", "inventory"));
+		ModelBakery.registerItemVariants(slice_of_cheese, new ModelResourceLocation(ICF_Global.modID + ":food_slice_of_cheese", "inventory"));
+		ModelBakery.registerItemVariants(slice_of_bread, new ModelResourceLocation(ICF_Global.modID + ":food_slice_of_bread", "inventory"));
+		ModelBakery.registerItemVariants(slice_of_raw_bacon, new ModelResourceLocation(ICF_Global.modID + ":food_slice_of_raw_bacon", "inventory"));
+		ModelBakery.registerItemVariants(slice_of_cooked_bacon, new ModelResourceLocation(ICF_Global.modID + ":food_slice_of_cooked_bacon", "inventory"));
+		ModelBakery.registerItemVariants(fried_egg, new ModelResourceLocation(ICF_Global.modID + ":food_fried_egg", "inventory"));
+		ModelBakery.registerItemVariants(bacon_egg_cheese, new ModelResourceLocation(ICF_Global.modID + ":food_bacon_egg_cheese", "inventory"));
+		//armor
+		ModelBakery.registerItemVariants(endimandiumHelmet, new ModelResourceLocation(ICF_Global.modID + ":endimandiumHelmet", "inventory"));
+		ModelBakery.registerItemVariants(endimandiumChestplate, new ModelResourceLocation(ICF_Global.modID + ":endimandiumChestplate", "inventory"));
+		ModelBakery.registerItemVariants(endimandiumLeggings, new ModelResourceLocation(ICF_Global.modID + ":endimandiumLeggings", "inventory"));
+		ModelBakery.registerItemVariants(endimandiumBoots, new ModelResourceLocation(ICF_Global.modID + ":endimandiumBoots", "inventory"));
+		ModelBakery.registerItemVariants(aluminumHelmet, new ModelResourceLocation(ICF_Global.modID + ":aluminumHelmet", "inventory"));
+		ModelBakery.registerItemVariants(aluminumChestplate, new ModelResourceLocation(ICF_Global.modID + ":aluminumChestplate", "inventory"));
+		ModelBakery.registerItemVariants(aluminumLeggings, new ModelResourceLocation(ICF_Global.modID + ":aluminumLeggings", "inventory"));
+		ModelBakery.registerItemVariants(aluminumBoots, new ModelResourceLocation(ICF_Global.modID + ":aluminumBoots", "inventory"));
+	}
+	
+	//render Items
+	public static void renderItems() {
+		//items
+		for (int i = 0; i < Item_ICF_Ingot.names.length; i++) {
+			registerRenders(icfIngot, i, "ingot" + Item_ICF_Ingot.names[i]);
+		}
+		for (int i = 0; i < Item_ICF_Dust_Metal.names.length; i++) {
+			registerRenders(icfDust_Metal, i, "dust" + Item_ICF_Dust_Metal.names[i]);
+		}
+		for (int i = 0; i < Item_ICF_Dust_Other.names.length; i++) {
+			registerRenders(icfDust_Other, i, "dust" + Item_ICF_Dust_Other.names[i]);
+		}
+		for (int i = 0; i < Item_ICF_Misc_1.names.length; i++) {
+			registerRenders(icfMisc_1, i, "item" + Item_ICF_Misc_1.names[i]);
+		}
+		//tools
+		registerRenders(toolEndimandiumSwineHammer, 0, "SwineHammerEndimandium");
+		registerRenders(toolAluminumSwineHammer, 0, "SwineHammerAluminum");
+		registerRenders(toolBronzeSwineHammer, 0, "SwineHammerBronze");
+		registerRenders(toolAluminumPickaxe, 0, "PickaxeAluminum");
+		registerRenders(toolAluminumAxe, 0, "AxeAluminum");
+		registerRenders(toolAluminumShovel, 0, "ShovelAluminum");
+		registerRenders(toolAluminumHoe, 0, "HoeAluminum");
+		registerRenders(toolAluminumSword, 0, "SwordAluminum");
+		//durable
+		registerRenders(silver_knife, 0, "durable_silver_knife");
+		//food
+		registerRenders(cheese_wheel, 0, "food_cheese_wheel");
+		registerRenders(cheese_sandwich, 0, "food_cheese_sandwich");
+		registerRenders(pork_back, 0, "food_pork_back");
+		registerRenders(slice_of_cheese, 0, "food_slice_of_cheese");
+		registerRenders(slice_of_bread, 0, "food_slice_of_bread");
+		registerRenders(slice_of_raw_bacon, 0, "food_slice_of_raw_bacon");
+		registerRenders(slice_of_cooked_bacon, 0, "food_slice_of_cooked_bacon");
+		registerRenders(fried_egg, 0, "food_fried_egg");
+		registerRenders(bacon_egg_cheese, 0, "food_bacon_egg_cheese");
+		//armor
+		registerRenders(endimandiumHelmet, 0, "endimandiumHelmet");
+		registerRenders(endimandiumChestplate, 0, "endimandiumChestplate");
+		registerRenders(endimandiumLeggings, 0, "endimandiumLeggings");
+		registerRenders(endimandiumBoots, 0, "endimandiumBoots");
+		registerRenders(aluminumHelmet, 0, "aluminumHelmet");
+		registerRenders(aluminumChestplate, 0, "aluminumChestplate");
+		registerRenders(aluminumLeggings, 0, "aluminumLeggings");
+		registerRenders(aluminumBoots, 0, "aluminumBoots");
+	}
+	
+	//create methods to be used in this class
+	public static void registerRenders(Item item, int meta, String name) {
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ICF_Global.modID + ":" + name, "inventory"));
+	}
+	
+}

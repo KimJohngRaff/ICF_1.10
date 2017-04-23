@@ -1,0 +1,52 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": { },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "type": {
+      "platinum": {
+        "textures": {
+          "all": "icf:blocks/platinumOre"
+        }
+      },
+      "tin": {
+        "textures": {
+          "all": "icf:blocks/tinOre"
+        }
+      },
+      "silver": {
+        "textures": {
+          "all": "icf:blocks/silverOre"
+        }
+      },
+      "aluminum": {
+        "textures": {
+          "all": "icf:blocks/aluminumOre"
+        }
+      },
+      "copper": {
+        "textures": {
+          "all": "icf:blocks/copperOre"
+        }
+      },
+      "nickel": {
+        "textures": {
+          "all": "icf:blocks/nickelOre"
+        }
+      },
+      "sulfur": {
+        "textures": {
+          "all": "icf:blocks/sulfurOre"
+        }
+      },
+      "saltpeter": {
+        "textures": {
+          "all": "icf:blocks/saltpeterOre"
+        }
+      }
+    }
+  }
+}

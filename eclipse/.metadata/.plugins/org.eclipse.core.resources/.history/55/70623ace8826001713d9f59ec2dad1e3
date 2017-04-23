@@ -1,0 +1,95 @@
+itemGroup.Tab_ICF=ICF
+
+tile.icf.icfBlock.black.name=Block of Black ICF
+tile.icf.icfBlock.red.name=Block of Red ICF
+tile.icf.icfBlock.green.name=Block of Green ICF
+tile.icf.icfBlock.brown.name=Block of Brown ICF
+tile.icf.icfBlock.blue.name=Block of Blue ICF
+tile.icf.icfBlock.purple.name=Block of Purple ICF
+tile.icf.icfBlock.cyan.name=Block of Cyan ICF
+tile.icf.icfBlock.lgray.name=Block of ICF
+tile.icf.icfBlock.gray.name=Block of Gray ICF
+tile.icf.icfBlock.pink.name=Block of Pink ICF
+tile.icf.icfBlock.lime.name=Block of Lime Green ICF
+tile.icf.icfBlock.yellow.name=Block of Yellow ICF
+tile.icf.icfBlock.lblue.name=Block of Light Blue ICF
+tile.icf.icfBlock.magenta.name=Block of Magenta ICF
+tile.icf.icfBlock.orange.name=Block of Orange ICF
+tile.icf.icfBlock.white.name=Block of White ICF
+
+tile.icf.icfOre.platinum.name=Platinum Ore
+tile.icf.icfOre.tin.name=Tin Ore
+tile.icf.icfOre.silver.name=SilverPlatinum Ore
+tile.icf.icfOre.aluminum.name=Aluminum Ore
+tile.icf.icfOre.copper.name=Copper Ore
+tile.icf.icfOre.nickel.name=Nickel Ore
+tile.icf.icfOre.sulfur.name=Sulfur Ore
+tile.icf.icfOre.saltpeter.name=Saltpeter Ore
+
+tile.icf.icfMetalBlock.blockendimandium.name=Block of Endimandium
+tile.icf.icfMetalBlock.blockenderium.name=Block of Enderium
+tile.icf.icfMetalBlock.blockenderiumpaste.name=Block of Enderium Paste
+tile.icf.icfMetalBlock.blockbronze.name=Block of Bronze
+tile.icf.icfMetalBlock.blockaluminum.name=Block of Aluminum
+tile.icf.icfMetalBlock.blocktin.name=Block of Tin
+tile.icf.icfMetalBlock.blockcopper.name=Block of Copper
+tile.icf.icfMetalBlock.blocknickel.name=Block of Nickel
+tile.icf.icfMetalBlock.blocksilver.name=Block of Silver
+tile.icf.icfMetalBlock.blockweakenedquartz.name=Weakened Block of Quartz
+tile.icf.icfMetalBlock.blockplatinum.name=Block of Platinum
+
+item.icf.ingot.platinum.name=Platinum Ingot
+item.icf.ingot.tin.name=Tin Ingot
+item.icf.ingot.silver.name=Silver Ingot
+item.icf.ingot.aluminum.name=Aluminum Ingot
+item.icf.ingot.copper.name=Copper Ingot
+item.icf.ingot.nickel.name=Nickel Ingot
+item.icf.ingot.bronze.name=Bronze Ingot
+item.icf.ingot.enderium.name=Enderium Ingot
+item.icf.ingot.endimandium.name=Endimandium Ingot
+
+item.icf.Dustdiamond.name=Diamond Dust
+item.icf.Dustemerald.name=Emerald Dust
+item.icf.Dustiron.name=Iron Dust
+item.icf.Dustgold.name=Gold Dust
+item.icf.Dustlapis.name=Lapis Dust
+item.icf.Dustendimandium.name=Endimandium Dust
+item.icf.Dustplatinum.name=Platinum Dust
+item.icf.Dusttin.name=Tin Dust
+item.icf.Dustsilver.name=Silver Dust
+item.icf.Dustaluminum.name=Aluminum Dust
+item.icf.Dustcopper.name=Copper Dust
+item.icf.Dustbronze.name=Bronze Dust
+item.icf.Dustnickel.name=Nickel Dust
+item.icf.DustnetherQuartz.name=Nether Quartz Dust
+item.icf.Dustsulfur.name=Sulfur
+item.icf.Dustcoal.name=Coal Dust
+item.icf.Dustobsidian.name=Obsidian Dust
+item.icf.Dustlead.name=Lead Dust
+item.icf.Dustsaltpeter.name=Saltpeter
+item.icf.Dustgranite.name=Granite Dust
+item.icf.Dustdorite.name=Dorite Dust
+item.icf.Dustandesite.name=Andesite Dust
+item.icf.Dustenderium.name=Enderium Dust
+
+item.icf.Misc.ICFCast.name=ICF Cast
+item.icf.Misc.FilledICFCast.name=Filled ICF Cast
+item.icf.Misc.Silicon.name=Silicon
+item.icf.Misc.EndimandiumICFCast.name=Endimandium Cast
+item.icf.Misc.AcidPaste.name=Acid Paste
+item.icf.Misc.DryAcid.name=Acid Powder
+item.icf.Misc.EnderPaste.name=Ender Paste
+item.icf.Misc.EnderiumPaste.name=Enderium Paste
+
+item.SwineHammerEndimandium.name=Endimandium Swine Hammer
+item.SwineHammerBronze.name=Bronze Swine Hammer
+item.SwineHammerAluminium.name=Aluminum Swine Hammer
+
+gui.config.gen.platinum.comment
+gui.config.gen.tin.comment
+gui.config.gen.silver.comment
+gui.config.gen.aluminum.comment
+gui.config.gen.copper.comment
+gui.config.gen.nickel.comment
+gui.config.gen.sulfur.comment
+gui.config.gen.saltpeter.comment
