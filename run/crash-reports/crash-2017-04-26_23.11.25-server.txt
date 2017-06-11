@@ -1,0 +1,106 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 4/26/17 11:11 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at com.KJR.ICF.api.handler.ICF_Drops_Handler.addBlockDrop(ICF_Drops_Handler.java:24)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_9_ICF_Drops_Handler_addBlockDrop_HarvestDropsEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.event.ForgeEventFactory.fireBlockHarvesting(ForgeEventFactory.java:258)
+	at net.minecraft.block.Block.dropBlockAsItemWithChance(Block.java:679)
+	at net.minecraft.world.Explosion.doExplosionB(Explosion.java:238)
+	at net.minecraft.world.WorldServer.newExplosion(WorldServer.java:1247)
+	at net.minecraft.world.World.createExplosion(World.java:2474)
+	at net.minecraft.entity.monster.EntityCreeper.explode(EntityCreeper.java:305)
+	at net.minecraft.entity.monster.EntityCreeper.onUpdate(EntityCreeper.java:183)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2111)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:874)
+	at net.minecraft.world.World.updateEntity(World.java:2078)
+	at net.minecraft.world.World.updateEntities(World.java:1891)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:646)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:408)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.KJR.ICF.api.handler.ICF_Drops_Handler.addBlockDrop(ICF_Drops_Handler.java:24)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_9_ICF_Drops_Handler_addBlockDrop_HarvestDropsEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.event.ForgeEventFactory.fireBlockHarvesting(ForgeEventFactory.java:258)
+	at net.minecraft.block.Block.dropBlockAsItemWithChance(Block.java:679)
+	at net.minecraft.world.Explosion.doExplosionB(Explosion.java:238)
+	at net.minecraft.world.WorldServer.newExplosion(WorldServer.java:1247)
+	at net.minecraft.world.World.createExplosion(World.java:2474)
+	at net.minecraft.entity.monster.EntityCreeper.explode(EntityCreeper.java:305)
+	at net.minecraft.entity.monster.EntityCreeper.onUpdate(EntityCreeper.java:183)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2111)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:874)
+	at net.minecraft.world.World.updateEntity(World.java:2078)
+
+-- Entity being ticked --
+Details:
+	Entity Type: Creeper (net.minecraft.entity.monster.EntityCreeper)
+	Entity ID: 6693
+	Entity Name: Creeper
+	Entity's Exact location: 229.50, 70.00, 115.50
+	Entity's Block location: World: (229,70,115), Chunk: (at 5,4,3 in 14,7; contains blocks 224,0,112 to 239,255,127), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1891)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:646)
+
+-- Affected level --
+Details:
+	Level name: world
+	All players: 1 total; [EntityPlayerMP['Player666'/442, l='world', x=229.29, y=70.00, z=113.18]]
+	Chunk stats: ServerChunkCache: 441 Drop: 0
+	Level seed: 7781878729356493584
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (236,64,108), Chunk: (at 12,4,12 in 14,6; contains blocks 224,0,96 to 239,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 194894 game time, 194894 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 992 (now: true), thunder time: 8125 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:408)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 845422288 bytes (806 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	icf{v1.01} [Imitation_Construction_Foam] (bin) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [EntityPlayerMP['Player666'/442, l='world', x=229.29, y=70.00, z=113.18]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

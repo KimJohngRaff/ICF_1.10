@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.util.math.RayTraceResult"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
-<fullyQualifiedTypeName name="net.minecraft.block.state.BlockStateContainer"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelBakery"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
-<fullyQualifiedTypeName name="net.minecraft.inventory.EntityEquipmentSlot"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
-<fullyQualifiedTypeName name="net.minecraftforge.client.model.ModelLoader"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item.ToolMaterial"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemAxe"/>
-<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemBlock"/>
-<fullyQualifiedTypeName name="com.KJR.ICF.itemBlocks.ICF_ItemBlock_String"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemArmor"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
-<fullyQualifiedTypeName name="com.KJR.ICF.api.handler.ICF_Drops_Handler"/>
-<fullyQualifiedTypeName name="net.minecraft.block.state.pattern.BlockMatcher"/>
-<fullyQualifiedTypeName name="com.KJR.ICF.ICF_Global"/>
-<fullyQualifiedTypeName name="com.typesafe.config.Config"/>
-<fullyQualifiedTypeName name="net.minecraftforge.common.config.Config"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.client.IModGuiFactory"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.NetworkRegistry"/>
-<fullyQualifiedTypeName name="com.KJR.ICF.config.ICF_Config"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemBlockSpecial"/>
+<fullyQualifiedTypeName name="com.KJR.ICF.items.tools.Item_ICF_CactusKnife"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.world.BlockEvent.BreakEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="com.KJR.ICF.blocks.Compressed_Cactus"/>
 </qualifiedTypeNameHistroy>

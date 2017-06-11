@@ -1,0 +1,169 @@
+Symbol range map extraction starting
+Processing 46 files
+startProcessing "com\KJR\ICF\ICF_Global.java" md5: c949cb1037e91464b643f0ad3176eb31
+Cache Hit!
+endProcessing "com\KJR\ICF\ICF_Global.java"
+
+startProcessing "com\KJR\ICF\Main.java" md5: 305c273c5b09d496b59b8b5d868c80fd
+endProcessing "com\KJR\ICF\Main.java"
+
+startProcessing "com\KJR\ICF\MaterialsICF.java" md5: 7eadc53e27d609653975164b464386e0
+endProcessing "com\KJR\ICF\MaterialsICF.java"
+
+startProcessing "com\KJR\ICF\api\handler\ICF_Armor_Effect_Handler.java" md5: 5c8c3884a9b16b74698e2489ae4ce96b
+endProcessing "com\KJR\ICF\api\handler\ICF_Armor_Effect_Handler.java"
+
+startProcessing "com\KJR\ICF\api\handler\ICF_Crafting_Handler.java" md5: 0121be9a3e5d104ab658b085cd725ef3
+Cache Hit!
+endProcessing "com\KJR\ICF\api\handler\ICF_Crafting_Handler.java"
+
+startProcessing "com\KJR\ICF\api\handler\ICF_Drops_Handler.java" md5: ce3acdfc11116754a7664670c7eb03f6
+endProcessing "com\KJR\ICF\api\handler\ICF_Drops_Handler.java"
+
+startProcessing "com\KJR\ICF\api\handler\ICF_Fuel_Handler.java" md5: 1925542ac60b486aa59f82b4e4444ee1
+endProcessing "com\KJR\ICF\api\handler\ICF_Fuel_Handler.java"
+
+startProcessing "com\KJR\ICF\api\helpers\Swineable.java" md5: 6d8f75c2e5e2c024d2ca821ffa5d8452
+Cache Hit!
+endProcessing "com\KJR\ICF\api\helpers\Swineable.java"
+
+startProcessing "com\KJR\ICF\api\iface\IMetaBlockName.java" md5: 1a0937733e90318319a991485e115975
+Cache Hit!
+endProcessing "com\KJR\ICF\api\iface\IMetaBlockName.java"
+
+startProcessing "com\KJR\ICF\blocks\Block_ICF_Base.java" md5: 09b937658d6e2e9723e4e0d839317813
+Cache Hit!
+endProcessing "com\KJR\ICF\blocks\Block_ICF_Base.java"
+
+startProcessing "com\KJR\ICF\blocks\Block_ICF_Metal.java" md5: e1faea63db0ad7e76d0b3864f7a95e14
+Cache Hit!
+endProcessing "com\KJR\ICF\blocks\Block_ICF_Metal.java"
+
+startProcessing "com\KJR\ICF\blocks\Block_ICF_Ore.java" md5: ce99727953652c6ca2f783c99564dddd
+Cache Hit!
+endProcessing "com\KJR\ICF\blocks\Block_ICF_Ore.java"
+
+startProcessing "com\KJR\ICF\blocks\Block_of_ICF.java" md5: e9c6ca236190a848810ed6b1bf6a987d
+Cache Hit!
+endProcessing "com\KJR\ICF\blocks\Block_of_ICF.java"
+
+startProcessing "com\KJR\ICF\blocks\Compressed_Cactus.java" md5: c50f5352376b396349d50f0e0789a619
+endProcessing "com\KJR\ICF\blocks\Compressed_Cactus.java"
+
+startProcessing "com\KJR\ICF\config\ICF_Config.java" md5: b9dab485102220509e114e062df4741f
+Cache Hit!
+endProcessing "com\KJR\ICF\config\ICF_Config.java"
+
+startProcessing "com\KJR\ICF\config\ICF_Config_GUI_Factory.java" md5: 9427b32632ffa9cbc6cb9c737eb12a1a
+Cache Hit!
+endProcessing "com\KJR\ICF\config\ICF_Config_GUI_Factory.java"
+
+startProcessing "com\KJR\ICF\entity\ICF_EntityLivingBase.java" md5: bf91edab2b5b351f1a368ff653cb9ff3
+Cache Hit!
+endProcessing "com\KJR\ICF\entity\ICF_EntityLivingBase.java"
+
+startProcessing "com\KJR\ICF\itemBlocks\ICF_ItemBlock_String.java" md5: f13ed76122d79db98cb2bd30eb582a8c
+Cache Hit!
+endProcessing "com\KJR\ICF\itemBlocks\ICF_ItemBlock_String.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Durable.java" md5: d47d27c743e3c161c0a3785e14452ac3
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_Durable.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Dust_Metal.java" md5: 0cf303a0d6bb96ffe191b658714357f5
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_Dust_Metal.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Dust_Other.java" md5: bdca877210c43d2c3c088e10230737cb
+endProcessing "com\KJR\ICF\items\Item_ICF_Dust_Other.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Food.java" md5: 1bf4bb3ec27eebe3977c4601712709b8
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_Food.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Ingot.java" md5: c479c2847e0924db0c0362c359398240
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_Ingot.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Misc_1.java" md5: 3af6d00e5c6c63ac88af4206558dddfc
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_Misc_1.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_Single_Stack.java" md5: 6958d90cb1f534720355b03292ed3462
+endProcessing "com\KJR\ICF\items\Item_ICF_Single_Stack.java"
+
+startProcessing "com\KJR\ICF\items\Item_ICF_SwineHammer.java" md5: 85aa97a8f7895eae281d3f14df4b80fb
+Cache Hit!
+endProcessing "com\KJR\ICF\items\Item_ICF_SwineHammer.java"
+
+startProcessing "com\KJR\ICF\items\armor\Item_ICF_AluminumArmor.java" md5: 6e9b0627e583e4c9baadff1092e497fc
+Cache Hit!
+endProcessing "com\KJR\ICF\items\armor\Item_ICF_AluminumArmor.java"
+
+startProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusArmor.java" md5: a628a577bdbb8e11488c0f57a255d62c
+endProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusArmor.java"
+
+startProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusHeavyArmor.java" md5: 870a0561f953a0b4bda94863af5ca713
+endProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusHeavyArmor.java"
+
+startProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusRobes.java" md5: 8322e061f6061e6f787995832f2909d6
+endProcessing "com\KJR\ICF\items\armor\Item_ICF_CactusRobes.java"
+
+startProcessing "com\KJR\ICF\items\armor\Item_ICF_EndimandiumArmor.java" md5: f90ad3ca9037c739b787ecf76931a9be
+Cache Hit!
+endProcessing "com\KJR\ICF\items\armor\Item_ICF_EndimandiumArmor.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumAxe.java" md5: 0ab0680ab7a1707889d3fa8c40064314
+Cache Hit!
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumAxe.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumHoe.java" md5: 8135fe77b82d3f887599ed9308a84967
+Cache Hit!
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumHoe.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumPickaxe.java" md5: 36f30c647c9c2e639d7882e32de61fd9
+Cache Hit!
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumPickaxe.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumShovel.java" md5: bb5c3f11222713ddf0e00352f635aa91
+Cache Hit!
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumShovel.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumSword.java" md5: 8d2201572baecb17327d63be22d87858
+Cache Hit!
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_AluminumSword.java"
+
+startProcessing "com\KJR\ICF\items\tools\Item_ICF_CactusKnife.java" md5: f24915dbe69977350e684d76f188c177
+endProcessing "com\KJR\ICF\items\tools\Item_ICF_CactusKnife.java"
+
+startProcessing "com\KJR\ICF\proxy\ClientProxy.java" md5: ec40bfdee68f5a9dfa14fe941c97d435
+Cache Hit!
+endProcessing "com\KJR\ICF\proxy\ClientProxy.java"
+
+startProcessing "com\KJR\ICF\proxy\CommonProxy.java" md5: 2816d66dc07ffc0985eff4a9360a4e75
+endProcessing "com\KJR\ICF\proxy\CommonProxy.java"
+
+startProcessing "com\KJR\ICF\registry\ICF_Blocks.java" md5: eb845a11dc3a25f6466687ee07aea5fc
+endProcessing "com\KJR\ICF\registry\ICF_Blocks.java"
+
+startProcessing "com\KJR\ICF\registry\ICF_Items.java" md5: 06fae176295bc9e2ee42c127dd1b2f77
+endProcessing "com\KJR\ICF\registry\ICF_Items.java"
+
+startProcessing "com\KJR\ICF\registry\OreRegistry.java" md5: 4770aa34a8f02022cc60e7454fca686e
+Cache Hit!
+endProcessing "com\KJR\ICF\registry\OreRegistry.java"
+
+startProcessing "com\KJR\ICF\registry\Recipes.java" md5: a5a00be1af3a4b7cbaad87ce3a1a0a1d
+endProcessing "com\KJR\ICF\registry\Recipes.java"
+
+startProcessing "com\KJR\ICF\registry\SwineRegistry.java" md5: b731b72f0f9ae2430ab6a9346ba00e04
+endProcessing "com\KJR\ICF\registry\SwineRegistry.java"
+
+startProcessing "com\KJR\ICF\world\ICF_WorldGen.java" md5: 8fc757194776ec075e234bdddc7e7174
+Cache Hit!
+endProcessing "com\KJR\ICF\world\ICF_WorldGen.java"
+
+startProcessing "com\KJR\ICF\world\ICF_WorldGenMinable.java" md5: bc4e98ce719c4c2f90fb5bcdf7cf99e2
+Cache Hit!
+endProcessing "com\KJR\ICF\world\ICF_WorldGenMinable.java"
+

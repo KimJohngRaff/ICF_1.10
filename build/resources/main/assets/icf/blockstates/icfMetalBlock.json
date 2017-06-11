@@ -1,0 +1,67 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": { },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "type": {
+      "blockendimandium": {
+        "textures": {
+          "all": "icf:blocks/blockendimandium"
+        }
+      },
+      "blockplatinum": {
+        "textures": {
+          "all": "icf:blocks/blockplatinum"
+        }
+      },
+      "blocktin": {
+        "textures": {
+          "all": "icf:blocks/blocktin"
+        }
+      },
+      "blocksilver": {
+        "textures": {
+          "all": "icf:blocks/blocksilver"
+        }
+      },
+      "blockaluminum": {
+        "textures": {
+          "all": "icf:blocks/blockaluminum"
+        }
+      },
+      "blockcopper": {
+        "textures": {
+          "all": "icf:blocks/blockcopper"
+        }
+      },
+      "blockbronze": {
+        "textures": {
+          "all": "icf:blocks/blockbronze"
+        }
+      },
+      "blocknickel": {
+        "textures": {
+          "all": "icf:blocks/blocknickel"
+        }
+      },
+      "blockweakenedquartz": {
+        "textures": {
+          "all": "icf:blocks/blockweakenedquartz"
+        }
+      },
+      "blockenderiumpaste": {
+        "textures": {
+          "all": "icf:blocks/blockenderiumpaste"
+        }
+      },
+      "blockenderium": {
+        "textures": {
+          "all": "icf:blocks/blockenderium"
+        }
+      }
+    }
+  }
+}

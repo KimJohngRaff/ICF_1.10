@@ -1,0 +1,152 @@
+itemGroup.Tab_ICF=ICF
+
+tile.icf.icfBlock.black.name=Block of Black ICF
+tile.icf.icfBlock.red.name=Block of Red ICF
+tile.icf.icfBlock.green.name=Block of Green ICF
+tile.icf.icfBlock.brown.name=Block of Brown ICF
+tile.icf.icfBlock.blue.name=Block of Blue ICF
+tile.icf.icfBlock.purple.name=Block of Purple ICF
+tile.icf.icfBlock.cyan.name=Block of Cyan ICF
+tile.icf.icfBlock.lgray.name=Block of ICF
+tile.icf.icfBlock.gray.name=Block of Gray ICF
+tile.icf.icfBlock.pink.name=Block of Pink ICF
+tile.icf.icfBlock.lime.name=Block of Lime Green ICF
+tile.icf.icfBlock.yellow.name=Block of Yellow ICF
+tile.icf.icfBlock.lblue.name=Block of Light Blue ICF
+tile.icf.icfBlock.magenta.name=Block of Magenta ICF
+tile.icf.icfBlock.orange.name=Block of Orange ICF
+tile.icf.icfBlock.white.name=Block of White ICF
+
+tile.icf.compressedCactus.black.name=Black Compressed Cactus
+tile.icf.compressedCactus.red.name=Red Compressed Cactus
+tile.icf.compressedCactus.green.name=Compressed Cactus
+tile.icf.compressedCactus.brown.name=Brown Compressed Cactus
+tile.icf.compressedCactus.blue.name=Blue Compressed Cactus
+tile.icf.compressedCactus.purple.name=Purple Compressed Cactus
+tile.icf.compressedCactus.cyan.name=Cyan Compressed Cactus
+tile.icf.compressedCactus.lgray.name=Light Gray Compressed Cactus
+tile.icf.compressedCactus.gray.name=Gray Compressed Cactus
+tile.icf.compressedCactus.pink.name=Pink Compressed Cactus
+tile.icf.compressedCactus.lime.name=Lime Green Compressed Cactus
+tile.icf.compressedCactus.yellow.name=Yellow Compressed Cactus
+tile.icf.compressedCactus.lblue.name=Light Blue Compressed Cactus
+tile.icf.compressedCactus.magenta.name=Magenta Compressed Cactus
+tile.icf.compressedCactus.orange.name=Orange Compressed Cactus
+tile.icf.compressedCactus.white.name=White Compressed Cactus
+
+tile.icf.icfOre.platinum.name=Platinum Ore
+tile.icf.icfOre.tin.name=Tin Ore
+tile.icf.icfOre.silver.name=SilverPlatinum Ore
+tile.icf.icfOre.aluminum.name=Aluminum Ore
+tile.icf.icfOre.copper.name=Copper Ore
+tile.icf.icfOre.nickel.name=Nickel Ore
+tile.icf.icfOre.sulfur.name=Sulfur Ore
+tile.icf.icfOre.saltpeter.name=Saltpeter Ore
+
+tile.icf.icfMetalBlock.blockendimandium.name=Block of Endimandium
+tile.icf.icfMetalBlock.blockenderium.name=Block of Enderium
+tile.icf.icfMetalBlock.blockenderiumpaste.name=Block of Enderium Paste
+tile.icf.icfMetalBlock.blockbronze.name=Block of Bronze
+tile.icf.icfMetalBlock.blockaluminum.name=Block of Aluminum
+tile.icf.icfMetalBlock.blocktin.name=Block of Tin
+tile.icf.icfMetalBlock.blockcopper.name=Block of Copper
+tile.icf.icfMetalBlock.blocknickel.name=Block of Nickel
+tile.icf.icfMetalBlock.blocksilver.name=Block of Silver
+tile.icf.icfMetalBlock.blockweakenedquartz.name=Weakened Block of Quartz
+tile.icf.icfMetalBlock.blockplatinum.name=Block of Platinum
+
+item.icf.ingot.platinum.name=Platinum Ingot
+item.icf.ingot.tin.name=Tin Ingot
+item.icf.ingot.silver.name=Silver Ingot
+item.icf.ingot.aluminum.name=Aluminum Ingot
+item.icf.ingot.copper.name=Copper Ingot
+item.icf.ingot.nickel.name=Nickel Ingot
+item.icf.ingot.bronze.name=Bronze Ingot
+item.icf.ingot.enderium.name=Enderium Ingot
+item.icf.ingot.endimandium.name=Endimandium Ingot
+
+item.icf.Dustdiamond.name=Diamond Dust
+item.icf.Dustemerald.name=Emerald Dust
+item.icf.Dustiron.name=Iron Dust
+item.icf.Dustgold.name=Gold Dust
+item.icf.Dustlapis.name=Lapis Dust
+item.icf.Dustendimandium.name=Endimandium Dust
+item.icf.Dustplatinum.name=Platinum Dust
+item.icf.Dusttin.name=Tin Dust
+item.icf.Dustsilver.name=Silver Dust
+item.icf.Dustaluminum.name=Aluminum Dust
+item.icf.Dustcopper.name=Copper Dust
+item.icf.Dustbronze.name=Bronze Dust
+item.icf.Dustnickel.name=Nickel Dust
+item.icf.DustnetherQuartz.name=Nether Quartz Dust
+item.icf.Dustsulfur.name=Sulfur
+item.icf.Dustcoal.name=Coal Dust
+item.icf.Dustobsidian.name=Obsidian Dust
+item.icf.Dustlead.name=Lead Dust
+item.icf.Dustsaltpeter.name=Saltpeter
+item.icf.Dustgranite.name=Granite Dust
+item.icf.Dustdorite.name=Dorite Dust
+item.icf.Dustandesite.name=Andesite Dust
+item.icf.Dustenderium.name=Enderium Dust
+item.icf.Dustreplication.name=Replication Dust
+
+item.icf.Misc.ICFCast.name=ICF Cast
+item.icf.Misc.FilledICFCast.name=Filled ICF Cast
+item.icf.Misc.Silicon.name=Silicon
+item.icf.Misc.EndimandiumICFCast.name=Endimandium Cast
+item.icf.Misc.AcidPaste.name=Acid Paste
+item.icf.Misc.DryAcid.name=Acid Powder
+item.icf.Misc.EnderPaste.name=Ender Paste
+item.icf.Misc.EnderiumPaste.name=Enderium Paste
+
+item.icf.durable.silver_knife.name=Silver Knife
+
+item.cheese_wheel.name=Wheel of Cheese
+item.cheese_sandwich.name=Cheese Sandwich
+item.pork_back.name=Pork Back
+item.slice_of_cheese.name=Slice of Cheese
+item.slice_of_bread.name=Slice of Bread
+item.slice_of_raw_bacon.name=Raw Slice of Bacon
+item.slice_of_cooked_bacon.name=Cooked Slice of Bacon
+item.fried_egg.name=Fried Egg
+item.bacon_egg_cheese=Bacon Egg & Cheese Sandwich
+
+item.endimandiumHelmet.name=Endimandium Helmet
+item.endimandiumChestplate.name=Endimandium Chestplate
+item.endimandiumLeggings.name=Endimandium Leggings
+item.endimandiumBoots.name=Endimandium Boots
+
+item.aluminumHelmet.name=Aluminum Helmet
+item.aluminumChestplate.name=Aluminum Chestplate
+item.aluminumLeggings.name=Aluminum Leggings
+item.aluminumBoots.name=Aluminum Boots
+
+item.SwineHammerEndimandium.name=Endimandium Swine Hammer
+item.SwineHammerBronze.name=Bronze Swine Hammer
+item.SwineHammerAluminum.name=Aluminum Swine Hammer
+
+item.PickaxeAluminum.name=Aluminum Pickaxe
+item.AxeAluminum.name=Aluminum Axe
+item.HoeAluminum.name=Aluminum Hoe
+item.SwordAluminum.name=Aluminum Sword
+item.ShovelAluminum.name=Aluminum Shovel
+
+gui.config.main=ICF Configuration
+gui.config.category.gen=Ore Generation
+gui.config.category.blocks.tooltip=Select which ICF ores will generate
+gui.config.gen.platinum.name=Generate Platinum Ore
+gui.config.gen.tin.name=Generate Tin Ore
+gui.config.gen.silver.name=Generate Silver Ore
+gui.config.gen.aluminum.name=Generate Aluminum Ore
+gui.config.gen.copper.name=Generate Copper Ore
+gui.config.gen.nickel.name=Generate Nickel Ore
+gui.config.gen.sulfur.name=Generate Sulfur Ore
+gui.config.gen.saltpeter.name=Generate Saltpeter Ore
+gui.config.gen.platinum.comment=Boolean for generating platinum ore
+gui.config.gen.tin.comment=Boolean for generating tin ore
+gui.config.gen.silver.comment=Boolean for generating silver ore
+gui.config.gen.aluminum.comment=Boolean for generating aluminum ore
+gui.config.gen.copper.comment=Boolean for generating copper ore
+gui.config.gen.nickel.comment=Boolean for generating nickel ore
+gui.config.gen.sulfur.comment=Boolean for generating sulfur ore
+gui.config.gen.saltpeter.comment=Boolean for generating saltpeter ore

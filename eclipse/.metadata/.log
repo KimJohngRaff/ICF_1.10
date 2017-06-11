@@ -1,4 +1,4 @@
-!SESSION 2017-02-26 12:08:09.742 -----------------------------------------------
+!SESSION 2017-04-23 11:45:54.132 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -6,16 +6,31 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-26 12:09:18.134
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 11:45:59.760
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.core.resources 2 10035 2017-02-26 12:09:30.946
-!MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2017-02-26 14:57:58.881 -----------------------------------------------
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 11:49:09.868
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 11:50:07.589
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 11:50:08.909
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 11:50:39.353
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 11:53:24.113
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-04-23 11:58:09.358
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.core.internal.refresh.RefreshJob
+!SESSION 2017-04-23 12:36:06.814 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -23,634 +38,19 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.core.resources 2 10035 2017-02-26 14:58:01.118
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-26 14:58:04.439
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 12:36:22.676
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.core.resources 4 1 2017-02-26 14:59:04.241
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:04.241
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: The project description file (.project) for 'MDKExample' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2017-02-26 14:59:04.245
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2017-02-26 14:59:04.245
-!MESSAGE The project description file (.project) for 'MDKExample' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 13:38:55.763
+!MESSAGE Variable references empty selection: ${project_loc}
 
-!ENTRY org.eclipse.jdt.core 4 4 2017-02-26 14:59:05.595
-!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: MDKExample
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while copying resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:332)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:05.595
-!MESSAGE Problems encountered while copying resources.
-!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2017-02-26 14:59:05.595
-!MESSAGE Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-!STACK 0
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jdt.core 4 4 2017-02-26 14:59:07.132
-!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: MDKExample
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while copying resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:332)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:07.132
-!MESSAGE Problems encountered while copying resources.
-!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2017-02-26 14:59:07.132
-!MESSAGE Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-!STACK 0
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jdt.core 4 4 2017-02-26 14:59:08.288
-!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: MDKExample
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while copying resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:332)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:08.289
-!MESSAGE Problems encountered while copying resources.
-!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2017-02-26 14:59:08.289
-!MESSAGE Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-!STACK 0
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jdt.core 4 4 2017-02-26 14:59:10.738
-!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: MDKExample
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while copying resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:332)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:10.738
-!MESSAGE Problems encountered while copying resources.
-!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2017-02-26 14:59:10.738
-!MESSAGE Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-!STACK 0
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jdt.core 4 4 2017-02-26 14:59:13.705
-!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: MDKExample
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Problems encountered while copying resources.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:332)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Contains: Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-02-26 14:59:13.705
-!MESSAGE Problems encountered while copying resources.
-!SUBENTRY 2 org.eclipse.core.filesystem 4 271 2017-02-26 14:59:13.705
-!MESSAGE Could not read from source when writing file: C:\Forge_Stuff\Forge_1.10.2\Imitation_Constructrion_Foam\eclipse\.metadata\.lock
-!STACK 0
-java.io.IOException: The process cannot access the file because another process has locked a portion of the file
-	at java.io.FileInputStream.readBytes(Native Method)
-	at java.io.FileInputStream.read(Unknown Source)
-	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:62)
-	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:200)
-	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
-	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:124)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
-	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
-	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:205)
-	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:329)
-	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:552)
-	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:383)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:223)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:192)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:120)
-	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
-	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2017-02-26 15:01:54.542 -----------------------------------------------
+!ENTRY org.eclipse.debug.core 4 120 2017-04-23 15:49:44.487
+!MESSAGE Variable references empty selection: ${project_loc}
+!SESSION 2017-04-26 22:18:12.253 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -658,13 +58,16 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-26 15:02:00.478
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-26 22:19:01.089
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-02-26 15:08:02.358 -----------------------------------------------
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-04-27 00:09:27.222
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.core.internal.refresh.RefreshJob
+!SESSION 2017-04-27 18:22:45.682 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -672,13 +75,13 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-26 15:08:07.495
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-27 18:23:03.821
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-02-27 19:33:19.473 -----------------------------------------------
+!SESSION 2017-05-05 20:18:57.460 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -686,13 +89,13 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-27 19:33:29.017
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-05 20:19:10.917
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-17 13:11:52.036 -----------------------------------------------
+!SESSION 2017-05-08 17:35:50.071 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -700,13 +103,13 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-17 13:12:03.321
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-08 17:36:00.455
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-17 19:54:51.749 -----------------------------------------------
+!SESSION 2017-05-09 17:37:15.593 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -714,13 +117,19 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-17 19:55:02.470
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-09 17:37:24.463
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-19 08:02:50.595 -----------------------------------------------
+
+!ENTRY org.eclipse.debug.core 4 120 2017-05-09 18:23:32.228
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-05-09 18:23:36.142
+!MESSAGE Variable references empty selection: ${project_loc}
+!SESSION 2017-05-12 19:37:25.489 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -728,13 +137,16 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 08:02:59.840
+!ENTRY org.eclipse.egit.ui 2 0 2017-05-12 19:37:36.401
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-19 17:47:51.214 -----------------------------------------------
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-05-12 20:21:03.886
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.core.internal.refresh.RefreshJob
+!SESSION 2017-06-10 12:55:34.280 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -742,13 +154,48 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-19 17:48:02.570
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-10 12:55:44.895
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-20 07:16:19.812 -----------------------------------------------
+
+!ENTRY org.eclipse.debug.core 4 120 2017-06-10 14:16:09.097
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-06-10 16:18:59.454
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-06-10 18:25:31.932
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.ui 4 4 2017-06-10 20:23:17.780
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-06-10 20:23:17.780
+!MESSAGE Could not open web browser on cactus_side.png. Ensure that it is an uncompressed file.
+
+!ENTRY org.eclipse.ui 4 4 2017-06-10 20:23:29.299
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-06-10 20:23:29.300
+!MESSAGE Could not open web browser on cactus_bottom.png. Ensure that it is an uncompressed file.
+
+!ENTRY org.eclipse.ui 4 4 2017-06-10 20:24:28.498
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-06-10 20:24:28.498
+!MESSAGE Could not open web browser on brewing_stand.png. Ensure that it is an uncompressed file.
+
+!ENTRY org.eclipse.ui 4 4 2017-06-10 20:24:30.936
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-06-10 20:24:30.936
+!MESSAGE Could not open web browser on cactus_bottom.png. Ensure that it is an uncompressed file.
+
+!ENTRY org.eclipse.core.resources 4 566 2017-06-10 20:32:37.233
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+
+!ENTRY org.eclipse.core.jobs 4 1 2017-06-10 20:32:37.250
+!MESSAGE Worker thread ended job: Refreshing workspace(10), but still holds rule: ThreadJob(Refreshing workspace(10),[F/MDKExample/.git])
+!SESSION 2017-06-10 20:32:43.080 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
@@ -756,50 +203,60 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-20 07:16:26.084
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-10 20:32:50.197
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-04-22 10:50:50.876 -----------------------------------------------
+
+!ENTRY org.eclipse.core.resources 4 566 2017-06-10 20:34:14.377
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+
+!ENTRY org.eclipse.core.jobs 4 1 2017-06-10 20:34:14.382
+!MESSAGE Worker thread ended job: Refreshing workspace(10), but still holds rule: ThreadJob(Refreshing workspace(10),[F/MDKExample/.git])
+!SESSION 2017-06-10 20:34:14.511 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Forge_Stuff/Forge_1.10.2/ICF_1.10/eclipse/ -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-22 10:51:00.057
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-10 20:34:18.125
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.core.jobs 4 2 2017-04-22 20:41:19.831
-!MESSAGE An internal error occurred during: "Win32 refresh daemon".
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.asyncRefresh(FileSystemResourceManager.java:142)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.isSynchronized(FileSystemResourceManager.java:748)
-	at org.eclipse.core.internal.resources.Resource.isSynchronized(Resource.java:1446)
-	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor$Handle.postRefreshRequest(Win32Monitor.java:209)
-	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor$ResourceHandle.handleNotification(Win32Monitor.java:303)
-	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.waitForNotification(Win32Monitor.java:601)
-	at org.eclipse.core.internal.resources.refresh.win32.Win32Monitor.run(Win32Monitor.java:519)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2017-04-22 21:01:43.840 -----------------------------------------------
+!ENTRY org.eclipse.core.resources 4 566 2017-06-10 20:34:34.734
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+
+!ENTRY org.eclipse.core.jobs 4 1 2017-06-10 20:34:34.741
+!MESSAGE Worker thread ended job: Refreshing workspace(10), but still holds rule: ThreadJob(Refreshing workspace(10),[F/MDKExample/.git])
+!SESSION 2017-06-10 20:34:50.252 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.java.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data C:\Forge_Stuff\Forge_1.10.2\ICF_1.10\eclipse -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-04-22 21:01:51.063
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-10 20:34:53.880
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\John_Graff'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2017-06-10 20:36:09.783
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-06-10 20:36:09.783
+!MESSAGE Could not open web browser on cactus_side.png. Ensure that it is an uncompressed file.
+
+!ENTRY org.eclipse.debug.core 4 120 2017-06-10 22:08:59.621
+!MESSAGE Variable references empty selection: ${project_loc}
+
+!ENTRY org.eclipse.debug.core 4 120 2017-06-11 10:00:32.079
+!MESSAGE Variable references empty selection: ${project_loc}

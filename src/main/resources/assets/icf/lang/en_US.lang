@@ -17,6 +17,23 @@ tile.icf.icfBlock.magenta.name=Block of Magenta ICF
 tile.icf.icfBlock.orange.name=Block of Orange ICF
 tile.icf.icfBlock.white.name=Block of White ICF
 
+tile.icf.compressedCactus.black.name=Black Compressed Cactus
+tile.icf.compressedCactus.red.name=Red Compressed Cactus
+tile.icf.compressedCactus.green.name=Compressed Cactus
+tile.icf.compressedCactus.brown.name=Brown Compressed Cactus
+tile.icf.compressedCactus.blue.name=Blue Compressed Cactus
+tile.icf.compressedCactus.purple.name=Purple Compressed Cactus
+tile.icf.compressedCactus.cyan.name=Cyan Compressed Cactus
+tile.icf.compressedCactus.lgray.name=Light Gray Compressed Cactus
+tile.icf.compressedCactus.gray.name=Gray Compressed Cactus
+tile.icf.compressedCactus.pink.name=Pink Compressed Cactus
+tile.icf.compressedCactus.lime.name=Lime Green Compressed Cactus
+tile.icf.compressedCactus.yellow.name=Yellow Compressed Cactus
+tile.icf.compressedCactus.lblue.name=Light Blue Compressed Cactus
+tile.icf.compressedCactus.magenta.name=Magenta Compressed Cactus
+tile.icf.compressedCactus.orange.name=Orange Compressed Cactus
+tile.icf.compressedCactus.white.name=White Compressed Cactus
+
 tile.icf.icfOre.platinum.name=Platinum Ore
 tile.icf.icfOre.tin.name=Tin Ore
 tile.icf.icfOre.silver.name=SilverPlatinum Ore
@@ -71,6 +88,7 @@ item.icf.Dustgranite.name=Granite Dust
 item.icf.Dustdorite.name=Dorite Dust
 item.icf.Dustandesite.name=Andesite Dust
 item.icf.Dustenderium.name=Enderium Dust
+item.icf.Dustreplication.name=Replication Dust
 
 item.icf.Misc.ICFCast.name=ICF Cast
 item.icf.Misc.FilledICFCast.name=Filled ICF Cast
@@ -81,9 +99,42 @@ item.icf.Misc.DryAcid.name=Acid Powder
 item.icf.Misc.EnderPaste.name=Ender Paste
 item.icf.Misc.EnderiumPaste.name=Enderium Paste
 
+item.icf.durable.silver_knife.name=Silver Knife
+
+item.cheese_wheel.name=Wheel of Cheese
+item.cheese_sandwich.name=Cheese Sandwich
+item.pork_back.name=Pork Back
+item.slice_of_cheese.name=Slice of Cheese
+item.slice_of_bread.name=Slice of Bread
+item.slice_of_raw_bacon.name=Raw Slice of Bacon
+item.slice_of_cooked_bacon.name=Cooked Slice of Bacon
+item.fried_egg.name=Fried Egg
+item.bacon_egg_cheese=Bacon Egg & Cheese Sandwich
+
+item.endimandiumHelmet.name=Endimandium Helmet
+item.endimandiumChestplate.name=Endimandium Chestplate
+item.endimandiumLeggings.name=Endimandium Leggings
+item.endimandiumBoots.name=Endimandium Boots
+
+item.aluminumHelmet.name=Aluminum Helmet
+item.aluminumChestplate.name=Aluminum Chestplate
+item.aluminumLeggings.name=Aluminum Leggings
+item.aluminumBoots.name=Aluminum Boots
+
 item.SwineHammerEndimandium.name=Endimandium Swine Hammer
 item.SwineHammerBronze.name=Bronze Swine Hammer
-item.SwineHammerAluminium.name=Aluminum Swine Hammer
+item.SwineHammerAluminum.name=Aluminum Swine Hammer
+
+item.PickaxeAluminum.name=Aluminum Pickaxe
+item.AxeAluminum.name=Aluminum Axe
+item.HoeAluminum.name=Aluminum Hoe
+item.SwordAluminum.name=Aluminum Sword
+item.ShovelAluminum.name=Aluminum Shovel
+
+item.CactusKnife.name=Cactus Knife
+item.HeavyCactusKnife.name=Heavy Cactus Knife
+
+item.icf.SingleStack.CactusBook.name=The Word Of Cactus
 
 gui.config.main=ICF Configuration
 gui.config.category.gen=Ore Generation

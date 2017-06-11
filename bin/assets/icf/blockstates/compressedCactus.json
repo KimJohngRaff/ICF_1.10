@@ -1,0 +1,92 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": { },
+    "model": "cube_all",
+    "uvlock": true
+  },
+  "variants": {
+    "type": {
+      "black": {
+        "textures": {
+          "all": "icf:blocks/cactusblack"
+        }
+      },
+      "red": {
+        "textures": {
+          "all": "icf:blocks/cactusred"
+        }
+      },
+      "green": {
+        "textures": {
+          "all": "icf:blocks/cactusgreen"
+        }
+      },
+      "brown": {
+        "textures": {
+          "all": "icf:blocks/cactusbrown"
+        }
+      },
+      "blue": {
+        "textures": {
+          "all": "icf:blocks/cactusblue"
+        }
+      },
+      "purple": {
+        "textures": {
+          "all": "icf:blocks/cactuspurple"
+        }
+      },
+      "cyan": {
+        "textures": {
+          "all": "icf:blocks/cactuscyan"
+        }
+      },
+      "lgray": {
+        "textures": {
+          "all": "icf:blocks/cactuslgray"
+        }
+      },
+      "gray": {
+        "textures": {
+          "all": "icf:blocks/cactusgray"
+        }
+      },
+      "pink": {
+        "textures": {
+          "all": "icf:blocks/cactuspink"
+        }
+      },
+      "lime": {
+        "textures": {
+          "all": "icf:blocks/cactuslime"
+        }
+      },
+      "yellow": {
+        "textures": {
+          "all": "icf:blocks/cactusyellow"
+        }
+      },
+      "lblue": {
+        "textures": {
+          "all": "icf:blocks/cactuslblue"
+        }
+      },
+      "magenta": {
+        "textures": {
+          "all": "icf:blocks/cactusmagenta"
+        }
+      },
+      "orange": {
+        "textures": {
+          "all": "icf:blocks/cactusorange"
+        }
+      },
+      "white": {
+        "textures": {
+          "all": "icf:blocks/cactuswhite"
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "builtin/generated",
-    "textures": {
-        "layer0": "icf:items/food_cheese_sandwich"
-    }
-}

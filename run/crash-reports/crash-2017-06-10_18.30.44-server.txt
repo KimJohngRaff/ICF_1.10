@@ -1,0 +1,103 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 6/10/17 6:30 PM
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at com.KJR.ICF.api.handler.ICF_Drops_Handler.onBreakBlock(ICF_Drops_Handler.java:79)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_10_ICF_Drops_Handler_onBreakBlock_BreakEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onBlockBreakEvent(ForgeHooks.java:742)
+	at net.minecraft.server.management.PlayerInteractionManager.tryHarvestBlock(PlayerInteractionManager.java:313)
+	at net.minecraft.server.management.PlayerInteractionManager.updateBlockRemoving(PlayerInteractionManager.java:126)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:284)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2111)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:874)
+	at net.minecraft.world.World.updateEntity(World.java:2078)
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:675)
+	at net.minecraft.world.World.updateEntities(World.java:1867)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:646)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.KJR.ICF.api.handler.ICF_Drops_Handler.onBreakBlock(ICF_Drops_Handler.java:79)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_10_ICF_Drops_Handler_onBreakBlock_BreakEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onBlockBreakEvent(ForgeHooks.java:742)
+	at net.minecraft.server.management.PlayerInteractionManager.tryHarvestBlock(PlayerInteractionManager.java:313)
+	at net.minecraft.server.management.PlayerInteractionManager.updateBlockRemoving(PlayerInteractionManager.java:126)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdate(EntityPlayerMP.java:284)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2111)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:874)
+	at net.minecraft.world.World.updateEntity(World.java:2078)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 365
+	Entity Name: Player14
+	Entity's Exact location: -14.79, 64.00, 277.23
+	Entity's Block location: World: (-15,64,277), Chunk: (at 1,4,5 in -1,17; contains blocks -16,0,272 to -1,255,287), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.WorldServer.tickPlayers(WorldServer.java:675)
+	at net.minecraft.world.World.updateEntities(World.java:1867)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:646)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player14'/365, l='New World', x=-14.79, y=64.00, z=277.23]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -5213651699611050043
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (0,64,252), Chunk: (at 0,4,12 in 0,15; contains blocks 0,0,240 to 15,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 115822 game time, 499 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 38686 (now: false), thunder time: 142957 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:783)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 574664688 bytes (548 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	icf{v1.01} [Imitation_Construction_Foam] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player14'/365, l='New World', x=-14.79, y=64.00, z=277.23]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 6/11/17 12:15 AM
+Description: Colliding entity with block
+
+java.lang.NullPointerException: Colliding entity with block
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.LivingHurt(ICF_Armor_Effect_Handler.java:31)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_8_ICF_Armor_Effect_Handler_LivingHurt_LivingHurtEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onLivingHurt(ForgeHooks.java:504)
+	at net.minecraft.entity.player.EntityPlayer.damageEntity(EntityPlayer.java:1170)
+	at net.minecraft.entity.EntityLivingBase.attackEntityFrom(EntityLivingBase.java:986)
+	at net.minecraft.entity.player.EntityPlayer.attackEntityFrom(EntityPlayer.java:1099)
+	at net.minecraft.entity.player.EntityPlayerMP.attackEntityFrom(EntityPlayerMP.java:590)
+	at com.KJR.ICF.blocks.Compressed_Cactus.onEntityCollidedWithBlock(Compressed_Cactus.java:166)
+	at net.minecraft.entity.Entity.doBlockCollisions(Entity.java:1043)
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:961)
+	at net.minecraft.entity.EntityLivingBase.moveEntityWithHeading(EntityLivingBase.java:1995)
+	at net.minecraft.entity.player.EntityPlayer.moveEntityWithHeading(EntityPlayer.java:1945)
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.setSpeedFast(ICF_Armor_Effect_Handler.java:152)
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.LivingUpdate(ICF_Armor_Effect_Handler.java:58)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_7_ICF_Armor_Effect_Handler_LivingUpdate_LivingUpdateEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onLivingUpdate(ForgeHooks.java:493)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2143)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:259)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:341)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:174)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:216)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:308)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:195)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:806)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.LivingHurt(ICF_Armor_Effect_Handler.java:31)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_8_ICF_Armor_Effect_Handler_LivingHurt_LivingHurtEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onLivingHurt(ForgeHooks.java:504)
+	at net.minecraft.entity.player.EntityPlayer.damageEntity(EntityPlayer.java:1170)
+	at net.minecraft.entity.EntityLivingBase.attackEntityFrom(EntityLivingBase.java:986)
+	at net.minecraft.entity.player.EntityPlayer.attackEntityFrom(EntityPlayer.java:1099)
+	at net.minecraft.entity.player.EntityPlayerMP.attackEntityFrom(EntityPlayerMP.java:590)
+	at com.KJR.ICF.blocks.Compressed_Cactus.onEntityCollidedWithBlock(Compressed_Cactus.java:166)
+
+-- Block being collided with --
+Details:
+	Block: icf:compressedCactus[type=lime]
+	Block location: World: (-17,64,270), Chunk: (at 15,4,14 in -2,16; contains blocks -32,0,256 to -17,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.entity.Entity.doBlockCollisions(Entity.java:1043)
+
+-- Entity being checked for collision --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 361
+	Entity Name: Player125
+	Entity's Exact location: -16.23, 64.94, 270.41
+	Entity's Block location: World: (-17,64,270), Chunk: (at 15,4,14 in -2,16; contains blocks -32,0,256 to -17,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.Entity.moveEntity(Entity.java:961)
+	at net.minecraft.entity.EntityLivingBase.moveEntityWithHeading(EntityLivingBase.java:1995)
+	at net.minecraft.entity.player.EntityPlayer.moveEntityWithHeading(EntityPlayer.java:1945)
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.setSpeedFast(ICF_Armor_Effect_Handler.java:152)
+	at com.KJR.ICF.api.handler.ICF_Armor_Effect_Handler.LivingUpdate(ICF_Armor_Effect_Handler.java:58)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_7_ICF_Armor_Effect_Handler_LivingUpdate_LivingUpdateEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:185)
+	at net.minecraftforge.common.ForgeHooks.onLivingUpdate(ForgeHooks.java:493)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2143)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:259)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 361
+	Entity Name: Player125
+	Entity's Exact location: -16.23, 64.94, 270.41
+	Entity's Block location: World: (-17,64,270), Chunk: (at 15,4,14 in -2,16; contains blocks -32,0,256 to -17,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:341)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:174)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:216)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:308)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@285c0d73
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:195)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:806)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:687)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:156)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:536)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 642249392 bytes (612 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.32 Powered by Forge 12.18.3.2185 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	Forge{12.18.3.2185} [Minecraft Forge] (forgeSrc-1.10.2-12.18.3.2185.jar) 
+	UCHIJAAAA	icf{v1.01} [Imitation_Construction_Foam] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player125'/361, l='New World', x=-16.23, y=64.94, z=270.41]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
